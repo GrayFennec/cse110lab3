@@ -4,8 +4,16 @@
         <title>Lab 2 Webpage</title>
         <meta charset = "utf-8">
         <link rel="icon" type="image/png" href="/cse110lab2/favicon.png">
+        <script type="text/javascript">
+            function helloWorld(){
+                var canvas = document.getElementById('canvas');
+                var ctx = canvas.getContext("2d");
+                ctx.font = "30px Arial";
+                ctx.fillText("Hello World", 10, 50); 
+            }
+        </script>
     </head>
-    <body>
+    <body onload="helloWorld();">
         <nav>
             <a href="/">Click here to go back to the page made in markdown!</a>
         </nav>
@@ -58,19 +66,27 @@
                             <code>print("Hello World!")</code>
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            Javascript now i guess?
+                        </td>
+                        <td>
+                            <canvas id="canvas" width="150" height="150"></canvas>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
-            <p>Printing <span>Hello World!</span> is proof of language mastery.</p>
+            <p>Printing <span>"Hello World!:</span> is proof of language mastery.</p>
             <h3>Things I've made</h3>
             <ul>
                 <li><a href="#list-of-pizzas-ive-made">Lotsa pizzas</a></li>
                 <li>The <a href="#immolate-art">beta art for immolate</a> in <i>Slay the Spire</i>.</li>
-                <li>An edited <a href="be-right-back">clip</a> of me playing <i>Monster Hunter: World</i></li>
+                <li>An edited <a href="#be-right-back">clip</a> of me playing <i>Monster Hunter: World</i></li>
                 <li>A <a href="#other-page">webpage</a> in markdown for this very class!</li>
             </ul>
             <h3>Goals</h3>
             <ul>
-
+                <li>finish this lab</li>
             </ul>    
             <hr>
             <section>
@@ -94,17 +110,21 @@
                     </li>
                 </ol>
                 <br>
+                <p>My magnum opus:</p>
+                <br>
                 <figure id="immolate-art">
-                    <img
-                    src="/cse110lab2/immolate.png"
-                    alt="One of the beta arts">
-                    <figcaption>The beta art for <b>immolate</b> in <i>Slay the Spire</i>. My magnum opus. A refrence to <a href="http://gunshowcomic.com/648">this</a> popular comic turned meme.</figcaption>
+                    <img src="/cse110lab2/immolate.png" alt="One of the beta arts">
+                    <figcaption>The beta art for <b>immolate</b> in <i>Slay the Spire</i>. A refrence to <a href="http://gunshowcomic.com/648">this</a> popular comic turned meme.</figcaption>
                 </figure>
+                <br>
+                <p>The <i>Monster Hunter World</i> experience:</p>
                 <br>
                 <video controls id="be-right-back" width="500">
                     <source src="/cse110lab2/brb.mp4"
                     type="video/mp4">
                 </video>
+                <br>
+                <p>The page for last weeks lab:</p>
                 <br>
                 <iframe id="other-page"
                     title="The page I made in markdown"
@@ -124,15 +144,15 @@
                     </div>
                     <div>
                         <label for="number">Rate this page on a scale of 1-19: </label>
-                        <input type="number" id="number" name="number" min="1" max="19">
+                        <input type="number" id="number" name="number" min="1" max="19" value="19">
                     </div>
                     <div>
                         <label for="range">Do it again, but now the scale isn't visible!</label>
-                        <input type="range" id="range" name="range" min="1" max="19">
+                        <input type="range" id="range" name="range" min="1" max="19" value="19">
                     </div>
                     <div>
                         <label for="text">Write stuff!</label>
-                        <input type="text" id="text" name="text" required minlength="1" maxlength="19" size="10">
+                        <input type="text" id="text" name="text">
                     </div>
                     <div>
                         <label for="area">Write more stuff!</label>
