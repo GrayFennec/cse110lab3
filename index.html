@@ -88,13 +88,11 @@
                 <ol>
                     <li>Combination Pizza.<br>
                         <picture>
-                            <source src="/PizzaPictures/Combination.jpg" type="image/jpg">
                             <img src="/PizzaPictures/Combination.jpg" alt="Combination Pizza" width = "500"/>
                         </picture>
                     </li>
                     <li>Stuffed Crust Pizza with onions and mushrooms.<br>
                         <picture>
-                            <source src="/PizzaPictures/StuffedCrust.jpg" type="image/jpg">
                             <img src="/PizzaPictures/StuffedCrust.jpg" alt="Stuffed Crust Pizza" width = "500"/>
                         </picture>
                     </li>
@@ -112,8 +110,7 @@
                 <p>The <i>Monster Hunter World</i> experience:</p>
                 <br>
                 <video controls id="be-right-back" width="500">
-                    <source src="/cse110lab2/brb.mp4"
-                    type="video/mp4">
+                    <source src="/cse110lab2/brb.mp4" type="video/mp4">
                 </video>
                 <br>
                 <p>Just the audio:</p>
@@ -147,27 +144,32 @@
                         <input type="range" id="range" name="range" min="1" max="19" value="19">
                     </div>
                     <div>
-                        <label for="text">Write stuff!</label>
-                        <input type="text" id="text" name="text">
+                        <label for="text">Write stuff, out of your own free will!</label>
+                        <input type="text" id="text" name="text" list="comments">
+                        <datalist id="comments">
+                            <option value="i love this">
+                            <option value="no other website compares">
+                            <option value="this is just well designed">
+                            <option value="too good">
+                            <option value="a page for the ages">
+                          </datalist>
                     </div>
                     <div>
                         <label for="area">Write more stuff!</label>
-                        <textarea id="area" name="area" rows="5" cols="33">Wow this is very good HTML</textarea>
+                        <textarea id="area" name="area" rows="5" cols="33">Wow this is some real nice HTML</textarea>
                     </div>
                     <div>
                         <label for="comment">Choose a comment to leave:</label>
                         <select id="comment">
-                        <datalist id="comments">
-                            <optgroup label="Positive comments">
-                                <option> great website! </option>
-                                <option> an amazing job </option>
-                                <option> i rate 19/19 </option>
-                                <option> the best page on the internet</option>
-                            </optgroup>
-                            <optgroup label="Not positive comments">
-                                <option> i am a horrible person and think negatively of this website </option>
-                            </optgroup>
-                        </datalist>
+                        <optgroup label="Positive comments">
+                            <option> great website! </option>
+                            <option> an amazing job </option>
+                            <option> i rate 19/19 </option>
+                            <option> the best page on the internet</option>
+                        </optgroup>
+                        <optgroup label="Not positive comments">
+                            <option> i am a horrible person and think negatively of this website </option>
+                        </optgroup>
                         </select>
                     </div>
                 </fieldset>
