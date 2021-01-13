@@ -4,7 +4,7 @@
         <title>Lab 2 Webpage</title>
         <meta charset = "utf-8">
         <link rel="icon" type="image/png" href="/cse110lab2/favicon.png">
-        <script type="text/javascript">
+        <script>
             function func(){
                 var canvas = document.getElementById('canvas');
                 var ctx = canvas.getContext("2d");
@@ -172,27 +172,32 @@
                         </optgroup>
                         </select>
                     </div>
+                    <div>
+                        <input type="submit" value="Submit">
+                    </div>
                 </fieldset>
-                <div>
-                    <label for="button">Push the button?</label>
-                    <input type="button" value="Yes">
-                </div>
-                <div>
-                    <label for="color">Whooo! Colors!</label>
-                    <input type="color" id="color" name="color" value="#FFFFFF">
-                </div>
-                <div>
-                    <label for="date">Chose a date!</label>
-                    <input type="date" id="date" name="date">
-                </div>
-                <div>
-                    <label for="time">Chose a time!</label>
-                    <input type="time" id="time" name="time">
-                </div>
-                <div>
-                    <input type="reset" value="Reset">
-                    <input type="submit" value="Submit">
-                </div>
+                <fieldset>
+                    <legend>Inconsequential interactives!</legend>
+                    <div>
+                        <label for="button">Push the button?</label>
+                        <input type="button" id="button" value="Yes">
+                    </div>
+                    <div>
+                        <label for="color">Whooo! Colors!</label>
+                        <input type="color" id="color" name="color" value="#FFFFFF">
+                    </div>
+                    <div>
+                        <label for="date">Chose a date!</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div>
+                        <label for="time">Chose a time!</label>
+                        <input type="time" id="time" name="time">
+                    </div>
+                    <div>
+                        <input type="reset" value="Reset">
+                    </div>
+                </fieldset>
             </form>
         </aside>
         <footer>
