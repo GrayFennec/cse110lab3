@@ -89,6 +89,7 @@
                     <li>Pinapple Pizza. (I dont have a picture for this one)
                     </li>
                 </ol>
+                <br>
                 <figure id="immolate-art">
                     <img
                     src="/cse110lab2/immolate.png"
@@ -122,13 +123,17 @@
                         <input type="number" id="number" name="number" min="1" max="19">
                     </div>
                     <div>
-                        <label for="range">Do it again!</label>
+                        <label for="range">Do it again, but now the scale isn't visible!</label>
                         <input type="range" id="range" name="range" min="1" max="19">
                     </div>
-
                     <div>
-                        <label for="area">Write a novel!</label>
+                        <label for="text">Once again, but now you rate by tallying with capital I</label>
+                        <input type="text" id="text" name="text" required  pattern="I+" minlength="1" maxlength="19" size="10">
+                    </div>
+                    <div>
+                        <label for="area">Write stuff!</label>
                         <textarea id="area" name="area" rows="5" cols="33">
+                            Wow this is very good HTML
                         </textarea>
                     </div>
                     <div>
@@ -154,6 +159,10 @@
                     <label for="date">Chose a date!</label>
                     <input type="date" id="date" name="date">
                 </div>
+                <div>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </div>
             </form>
         </aside>
         <footer>
@@ -164,6 +173,7 @@
                 In
                 HTML.
             </pre>
+            <!--This brings me back to summer of 5th grade, where my parents signed me up for an intro to HTML class, 5 days a week for 8 weeks. I was bored by it then, and I'm bored by it now. -->
         </footer>
     </body>
 </html>
