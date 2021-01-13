@@ -111,21 +111,49 @@
         </main>
         <aside>
             <form action="" method="">
-                <legend>Review this page!</legend>
-                <label for="checkbox">Do you like this page?</label>
-                <input type="checkbox" id="checkbox" name="checkbox">
-                <br>
-                <label for="number">Rate this page on a scale of 1-19</label>
-                <input type="number" id="number" name="number" min="1" max="19">
-                <br>
-                <label for="number">Again!</label>
-                <input type="range" id="range" name="range" min="1" max="19">
-                <br>
-                <label for="button">Push the button?</label>
-                <input type="button" value="Yes">
-                <br>
-                <label for="color">Pick a color!</label>
-                <input type="color" id="color" name="color" value="#FFFFFF">
+                <fieldset>
+                    <legend>Review this page!</legend>
+                    <div>
+                        <label for="checkbox">Do you like this page?</label>
+                        <input type="checkbox" id="checkbox" name="checkbox" checked>
+                    </div>
+                    <div>
+                        <label for="number">Rate this page on a scale of 1-19: </label>
+                        <input type="number" id="number" name="number" min="1" max="19">
+                    </div>
+                    <div>
+                        <label for="range">Do it again!</label>
+                        <input type="range" id="range" name="range" min="1" max="19">
+                    </div>
+
+                    <div>
+                        <label for="area">Write a novel!</label>
+                        <textarea id="area" name="area" rows="5" cols="33">
+                        </textarea>
+                    </div>
+                    <div>
+                        <label for="comment">Choose a comment to leave:</label>
+                        <select id="comment">
+                        <datalist id="comment">
+                            <option value="very good website">
+                            <option value="such an amazing job">
+                            <option value="19/19">
+                            <option value="the bestest page on the internet">
+                        </datalist>
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="button">Push the button?</label>
+                    <input type="button" value="Yes">
+                </div>
+                <div>
+                    <label for="color">Whooo! Colors!</label>
+                    <input type="color" id="color" name="color" value="#FFFFFF">
+                </div>
+                <div>
+                    <label for="date">Chose a date!</label>
+                    <input type="date" id="date" name="date">
+                </div>
             </form>
         </aside>
         <footer>
