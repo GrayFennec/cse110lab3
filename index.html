@@ -56,7 +56,7 @@
                     </tr>
                 </tbody>
             </table>
-            <p>Printing Hello World! is proof of language mastery.</p>
+            <p>Printing <span>Hello World!</span> is proof of language mastery.</p>
             <h3>Things I've made</h3>
             <ul>
                 <li><a href="#list-of-pizzas-ive-made">Lotsa pizzas</a></li>
@@ -69,41 +69,45 @@
 
             </ul>    
             <hr>
-            <h2>Appendix of stuff I've made.</h2>
-            <h3 id="list-of-pizzas-ive-made">Pizzas</h3>
-            <div><strong>Ranked from most tasty to least tasty. (They all still tasted good)</strong></div>
-            <ol>
-                <li>Combination Pizza.<br>
-                    <picture>
-                        <source src="/PizzaPictures/Combination.jpg" type="image/jpg">
-                        <img src="/PizzaPictures/Combination.jpg" alt="Combination Pizza" width = "500"/></li>
-                    </picture>
-                </li>
-                <li>Stuffed Crust Pizza with onions and mushrooms.<br>
-                    <picture>
-                        <source src="/PizzaPictures/StuffedCrust.jpg" type="image/jpg">
-                        <img src="/PizzaPictures/StuffedCrust.jpg" alt="Stuffed Crust Pizza" width = "500"/>
-                    </picture>
-                </li>
-                <li>Pinapple Pizza. (I dont have a picture for this one)
-                </li>
-            </ol>
-            <figure id="immolate-art">
-                <img
-                src="/cse110lab2/immolate.png"
-                alt="One of the beta arts">
-                <figcaption>The beta art for <b>immolate</b> in <i>Slay the Spire</i>. My magnum opus. A refrence to <a href="http://gunshowcomic.com/648">this</a> popular comic turned meme.</figcaption>
-            </figure>
-            <video controls id="be-right-back" width="500">
-                <source src="/cse110lab2/brb.mp4"
-                type="video/mp4">
-            </video>
-            <iframe id="other-page"
-                title="The page I made in markdown"
-                width="500"
-                height="380"
-                src="/">
-            </iframe>
+            <section>
+                <h2>Appendix of stuff I've made.</h2>
+                <h3 id="list-of-pizzas-ive-made">Pizzas</h3>
+                <div><strong>Ranked from most tasty to least tasty. (They all still tasted good)</strong></div>
+                <ol>
+                    <li>Combination Pizza.<br>
+                        <picture>
+                            <source src="/PizzaPictures/Combination.jpg" type="image/jpg">
+                            <img src="/PizzaPictures/Combination.jpg" alt="Combination Pizza" width = "500"/></li>
+                        </picture>
+                    </li>
+                    <li>Stuffed Crust Pizza with onions and mushrooms.<br>
+                        <picture>
+                            <source src="/PizzaPictures/StuffedCrust.jpg" type="image/jpg">
+                            <img src="/PizzaPictures/StuffedCrust.jpg" alt="Stuffed Crust Pizza" width = "500"/>
+                        </picture>
+                    </li>
+                    <li>Pinapple Pizza. (I dont have a picture for this one)
+                    </li>
+                </ol>
+                <figure id="immolate-art">
+                    <img
+                    src="/cse110lab2/immolate.png"
+                    alt="One of the beta arts">
+                    <figcaption>The beta art for <b>immolate</b> in <i>Slay the Spire</i>. My magnum opus. A refrence to <a href="http://gunshowcomic.com/648">this</a> popular comic turned meme.</figcaption>
+                </figure>
+                <br>
+                <video controls id="be-right-back" width="500">
+                    <source src="/cse110lab2/brb.mp4"
+                    type="video/mp4">
+                </video>
+                <br>
+                <iframe id="other-page"
+                    title="The page I made in markdown"
+                    width="500"
+                    height="380"
+                    src="/">
+                </iframe>
+            </section>
         </main>
         <aside>
             <form action="" method="">
@@ -111,11 +115,17 @@
                 <label for="checkbox">Do you like this page?</label>
                 <input type="checkbox" id="checkbox" name="checkbox">
                 <br>
+                <label for="number">Rate this page on a scale of 1-19</label>
+                <input type="number" id="number" name="number" min="1" max="19">
+                <br>
+                <label for="number">Again!</label>
+                <input type="range" id="range" name="range" min="1" max="19">
+                <br>
                 <label for="button">Push the button?</label>
                 <input type="button" value="Yes">
                 <br>
-                <input type="color" id="color" name="color" value="#e66465">
                 <label for="color">Pick a color!</label>
+                <input type="color" id="color" name="color" value="#FFFFFF">
             </form>
         </aside>
         <footer>
