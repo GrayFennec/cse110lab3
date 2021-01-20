@@ -21,6 +21,13 @@ input.widget{
     text-decoration: underline overline;
 }
 
+[src]{
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 10px 10px 10px 10px;
+}
+
 html {
     font-size: 14px;
     background-color: rgb(236, 208, 130);
