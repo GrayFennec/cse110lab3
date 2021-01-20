@@ -22,6 +22,24 @@ form > div{
     padding: left;
 }
 
+.flexparent{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.flexchild{
+    margin: auto;
+    flex-grow: 4;
+}
+
+.gridparent{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    gap: 10px 10px;
+}
+
 @media only screen and (min-height: 600px){
     nav{
     display: block;
