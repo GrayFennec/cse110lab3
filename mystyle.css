@@ -6,15 +6,28 @@
 }
 
 colgroup col{
-    width: 200px;
-}
-
-.widget{
-    height: auto;
+    min-width: 50%;
 }
 
 input.widget{
-    margin-left: 20px;
+    height: 2em;
+}
+
+.widget{
+    margin-left: 3vw;
+}
+
+form > div{
+    margin: auto;
+    padding: left;
+}
+
+label + input{
+    width: auto;
+}
+
+label ~ optgroup{
+    text-align: center;
 }
 
 #list-of-pizzas-ive-made{
@@ -22,6 +35,11 @@ input.widget{
 }
 
 [src]{
+    margin-left: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     border-style: solid;
     border-color: black;
     border-width: 5px;
@@ -29,7 +47,7 @@ input.widget{
 }
 
 html {
-    font-size: 14px;
+    font-size: 14pt;
     background-color: rgb(236, 208, 130);
     font-family: "Playfair Display", serif;
 }
