@@ -31,8 +31,8 @@
             <table>
                 <caption>Languages I know:</caption>
                 <colgroup>
-                    <col span="1" class="language">
-                    <col span="1" class="code">
+                    <col span="1">
+                    <col span="1">
                 </colgroup>
                 <thead>
                     <tr>
@@ -141,19 +141,19 @@
                     <legend>Review this page!</legend>
                     <div>
                         <label for="checkbox">Do you like this page?</label>
-                        <input type="checkbox" id="checkbox" name="checkbox" checked>
+                        <input type="checkbox" id="checkbox" name="checkbox" checked class="widget">
                     </div>
                     <div>
                         <label for="number">Rate this page on a scale of 1-19: </label>
-                        <input type="number" id="number" name="number" min="1" max="19" value="19">
+                        <input type="number" id="number" name="number" min="1" max="19" value="19" class="widget">
                     </div>
                     <div>
                         <label for="range">Do it again, but now the scale isn't visible!</label>
-                        <input type="range" id="range" name="range" min="1" max="19" value="19">
+                        <input type="range" id="range" name="range" min="1" max="19" value="19" class="widget">
                     </div>
                     <div>
                         <label for="text">Write stuff, out of your own free will!</label>
-                        <input type="text" id="text" name="text" list="comments">
+                        <input type="text" id="text" name="text" list="comments" class="widget">
                         <datalist id="comments">
                             <option value="i love this">
                             <option value="no other website compares">
@@ -164,7 +164,7 @@
                     </div>
                     <div>
                         <label for="area">Write more stuff!</label>
-                        <textarea id="area" name="area" rows="5" cols="33">Wow this is some real nice HTML</textarea>
+                        <textarea id="area" name="area" rows="5" cols="33" class="widget">Wow this is some real nice HTML</textarea>
                     </div>
                     <div>
                         <label for="comment">Choose a comment to leave:</label>
@@ -181,29 +181,29 @@
                         </select>
                     </div>
                     <div>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" class="widget">
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Inconsequential interactives!</legend>
                     <div>
                         <label for="button">Push the button?</label>
-                        <input type="button" id="button" value="Yes">
+                        <input type="button" id="button" value="Yes" class="widget">
                     </div>
                     <div>
                         <label for="color">Whooo! Colors!</label>
-                        <input type="color" id="color" name="color" value="#FFFFFF">
+                        <input type="color" id="color" name="color" value="#FFFFFF" class="widget">
                     </div>
                     <div>
                         <label for="date">Chose a date!</label>
-                        <input type="date" id="date" name="date">
+                        <input type="date" id="date" name="date" class="widget">
                     </div>
                     <div>
                         <label for="time">Chose a time!</label>
-                        <input type="time" id="time" name="time">
+                        <input type="time" id="time" name="time" class="widget">
                     </div>
                     <div>
-                        <input type="reset" value="Reset">
+                        <input type="reset" value="Reset" class="widget">
                     </div>
                 </fieldset>
             </form>

@@ -5,9 +5,20 @@
     color: #3a6b2d
 }
 
-/* class selector */
-.language{
-    width: 150px;
+colgroup col{
+    width: 200px;
+}
+
+.widget{
+    height: auto;
+}
+
+input.widget{
+    margin-left: 20px;
+}
+
+#list-of-pizzas-ive-made{
+    text-decoration: underline overline;
 }
 
 html {
@@ -20,7 +31,7 @@ p{
     color:mediumorchid;
 }
 
-h1{
+h1, h2, h3{
     color: hsla(10,100%,50%,0.7);
-    margin-left: 40px;
+    margin: left;
 }
